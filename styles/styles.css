@@ -1,0 +1,131 @@
+#layout {
+    display: flex;
+    flex-direction: column;
+}
+#layoutmiddle {
+    display: flex;
+}
+header {
+    background-image: url('/images/findagisarek.jpg');
+    background-size: 125%;
+    background-position: 100% 50%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+    color: #e9fff4;
+    margin: 0;
+    border-width: 0;
+    
+}
+header img{
+    width: 100%;
+}
+header span{
+    font-size: 26px;
+}
+.navheadline{
+    background-color: #f5f5f5;
+    overflow: hidden;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    position: sticky;
+      
+}
+.linav{
+    display: inline;
+    margin: 0 5%;
+    font-size: 18px;
+    text-decoration: none;
+}
+.linav:hover{
+    text-decoration: underline;
+}
+.linav a{
+    text-decoration: none;
+    color: #4b4b4b
+}
+.aboutimg{
+    width: fit-content;
+    width: 400px;
+    height: 360px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 8px;
+    padding: 5px;
+    float: left;
+    
+}
+.aboutbild{
+    width: 100%;
+}
+.aboutbackground{
+    margin: 2%;
+    padding: 2%;
+    min-width: 420px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.abouttext{
+    font-size: 20px;
+    margin: 6px;
+    font-family: 'Dancing Script', serif;
+}
+.container{
+    text-align: center;
+    padding: 10px 20px;
+}
+.iframecontent{
+    display: block;       /* iframes are inline by default */
+    background: white;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100%;
+    margin: 0;
+}
+.googleIframe{
+    width: 200px;
+    height: 160px;
+} 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+.mainclass {
+    width: 100vh;
+    flex-grow: 2;
+}
+.iconimg{
+    height: 26px;
+}
+ 
+ @media screen and (max-width: 680px)
+{ #layoutmiddle{
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutimg{
+    width: 210px;
+    height: 250px;
+    }
+}
+.mainclass{
+    width: 100%;
+}
+
+@media screen and (min-width: 681px)
+{ .navheadline{
+    background-color: #f5f5f5;
+    overflow: hidden;
+    text-align:right;
+    min-width: 100px;
+}
+.linav{
+    display: block;
+    margin: 10%;
+}
+}
